@@ -1,0 +1,23 @@
+config file:
+	
+	current_model = 'yolo26n.pt'
+
+command webcam_yolo_app.py add_model 'yolo26n.pt'
+
+folder with .pt files is our pool of installed models
+
+
+
+
+any model used in this app has standard format that it takes and outputs. Numpy array (height, width, 3) uint8 [0, 256), any resolution. 
+
+
+
+
+we have what_to_detect.txt file. Place label words separated by newlines. The words supported by the current model will be loaded and used in prompts. 
+
+there will be two sets during run: *what labels to detect* - filtered from what_to_detect.txt, *all supported labels*. 
+
+	there will be interface where list of labels from *all supported labels* is shown, all labels from *what labels to detect* are checkmarked. Its synchronised with the sets in the main loop.
+
+
