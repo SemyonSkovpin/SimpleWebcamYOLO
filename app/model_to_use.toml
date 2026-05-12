@@ -1,0 +1,9 @@
+# Choose which model from Ultralytics library to use.
+
+model_filename = 'yolo26n.pt' 
+
+
+# Or directly set path to .pt file of the model you installed.
+# Takes priority over model_filename. Set it to '' if not used. 
+
+path_to_model = '' 
