@@ -1,4 +1,5 @@
 This is a small python app that will open your webcam and run YOLO object detection in real time. 
+
 It's coded to use YOLO models from the ultralytics library.
 
 ##### How to install and launch
